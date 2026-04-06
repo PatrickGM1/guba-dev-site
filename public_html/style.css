@@ -136,17 +136,23 @@ section {
 
 /* Blog */
 .blog-link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
     color: var(--accent);
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: border-color 0.15s;
 }
 
 .blog-link:hover {
-    text-decoration: underline;
+    border-color: var(--accent);
+    text-decoration: none;
 }
 
 .tag {
