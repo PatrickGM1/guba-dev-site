@@ -1,0 +1,6 @@
+baseURL = 'https://blog.guba.dev'
+languageCode = 'en-us'
+title = 'blog.guba.dev'
+
+[params]
+  description = 'Thoughts, projects, and stuff I figured out along the way.'

@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <div class="hero">
+    <h1 class="hero-domain"><a href="https://guba.dev">guba.dev</a> <span class="hero-slash">/ blog</span></h1>
+    <p>{{ .Site.Params.description }}</p>
+  </div>
+
+  <section>
+    <span class="section-label">Posts</span>
+    <div class="posts">
+      {{ $pages := where .Site.RegularPages "Type" "posts" }}
+      {{ if $pages }}
+        {{ range $pages }}
+          <a href="{{ .Permalink }}" class="card">
+            <h3>{{ .Title }}</h3>
+            <p class="card-meta">{{ .Date.Format "January 2, 2006" }}</p>
+            {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+          </a>
+        {{ end }}
+      {{ else }}
+        <p class="empty">No posts yet — check back soon.</p>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
