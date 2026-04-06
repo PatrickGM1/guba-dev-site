@@ -14,4 +14,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html
-            git pull origin main || (git init && git remote add origin https://github.com/${{ github.repository }}.git && git fetch && git reset --hard origin/main)
+            git pull origin main || (git fetch --all && git reset --hard origin/main)
