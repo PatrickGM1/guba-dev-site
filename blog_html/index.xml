@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog.guba.dev</title>
+    <link>https://blog.guba.dev/</link>
+    <description>Recent content on blog.guba.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.guba.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://blog.guba.dev/posts/hello-world/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.guba.dev/posts/hello-world/</guid>
+      <description>First post. Setting up a blog mostly so I have somewhere to dump things I figure out.&#xA;I&amp;rsquo;m Patrick — 3rd year CS student at RUG. I bought a MIDI keyboard, I play guitar, and I spend too much time building things instead of studying for them.&#xA;This blog will be a mix of project writeups, things I learned, and whatever else feels worth writing down.</description>
+    </item>
+  </channel>
+</rss>
