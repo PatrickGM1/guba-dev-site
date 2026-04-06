@@ -46,10 +46,16 @@ body {
     font-weight: 800;
     letter-spacing: -0.05em;
     line-height: 1;
-    background: linear-gradient(135deg, #a89af7 0%, #7c6af7 50%, #5b4de0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
+}
+
+.hero-domain a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.hero-slash {
+    color: var(--text);
 }
 
 .hero p {
