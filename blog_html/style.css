@@ -47,6 +47,15 @@ body {
     color: var(--accent);
 }
 
+.hero-domain a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.hero-slash {
+    color: var(--text);
+}
+
 .hero p {
     color: var(--muted);
     font-size: 0.95rem;
