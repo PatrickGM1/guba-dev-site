@@ -85,6 +85,12 @@ section {
     gap: 20px;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .card {
     background: var(--surface);
     border: 1px solid var(--border);
