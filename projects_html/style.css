@@ -93,7 +93,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    text-decoration: none;
     color: inherit;
     transition: border-color 0.15s;
 }
@@ -111,6 +110,39 @@ section {
     font-size: 0.85rem;
     color: var(--muted);
     line-height: 1.5;
+}
+
+.card-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.card-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.73rem;
+    font-weight: 500;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.card-links a:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    background: rgba(124, 106, 247, 0.12);
+}
+
+.card-links a svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
 }
 
 .card-meta {
