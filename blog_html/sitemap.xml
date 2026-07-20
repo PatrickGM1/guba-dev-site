@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.guba.dev/</loc>
+    <loc>https://guba.dev/blog/</loc>
     <lastmod>2026-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.guba.dev/posts/hello-world/</loc>
+    <loc>https://guba.dev/blog/posts/hello-world/</loc>
     <lastmod>2026-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.guba.dev/posts/</loc>
+    <loc>https://guba.dev/blog/posts/</loc>
     <lastmod>2026-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.guba.dev/categories/</loc>
+    <loc>https://guba.dev/blog/categories/</loc>
   </url><url>
-    <loc>https://blog.guba.dev/tags/</loc>
+    <loc>https://guba.dev/blog/tags/</loc>
   </url>
 </urlset>

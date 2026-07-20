@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on blog.guba.dev</title>
-    <link>https://blog.guba.dev/posts/</link>
+    <link>https://guba.dev/blog/posts/</link>
     <description>Recent content in Posts on blog.guba.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.guba.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://guba.dev/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>https://blog.guba.dev/posts/hello-world/</link>
+      <link>https://guba.dev/blog/posts/hello-world/</link>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.guba.dev/posts/hello-world/</guid>
-      <description>First post. Setting up a blog mostly so I have somewhere to dump things I figure out.&#xA;I&amp;rsquo;m Patrick — 3rd year CS student at RUG. I bought a MIDI keyboard, I play guitar, and I spend too much time building things instead of studying for them.&#xA;This blog will be a mix of project writeups, things I learned, and whatever else feels worth writing down.</description>
+      <guid>https://guba.dev/blog/posts/hello-world/</guid>
+      <description>First post. Setting up a blog mostly so I have somewhere to dump things I figure out.&#xA;I&amp;rsquo;m Patrick, 3rd year CS student at University of Groningen.&#xA;At the moment I&amp;rsquo;m preoccupied with my wellbeing. I recently started going to the gym and eating healthier. I really enjoy going on long walks or long bike rides. I also have a plan to complete a HYROX race by summer 2027, and I&amp;rsquo;m looking for a partner for that.</description>
     </item>
   </channel>
 </rss>

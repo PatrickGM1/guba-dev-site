@@ -1,4 +1,4 @@
-baseURL = 'https://blog.guba.dev'
+baseURL = 'https://guba.dev/blog/'
 languageCode = 'en-us'
 title = 'blog.guba.dev'
 
