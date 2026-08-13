@@ -1,13 +1,16 @@
 {{ define "main" }}
-  <a href="{{ .Site.BaseURL }}" class="back-link">← back</a>
-
   <article class="post">
-    <header class="post-header">
-      <h1>{{ .Title }}</h1>
-      <p class="card-meta">{{ .Date.Format "January 2, 2006" }}</p>
-    </header>
-    <div class="post-content">
-      {{ .Content }}
-    </div>
+    <h1>{{ .Title }}</h1>
+    <p class="date">{{ .Date.Format "2 January 2006" }}</p>
+    {{ .Content }}
   </article>
+
+  <section>
+    <div class="rows">
+      <a class="row" href="{{ .Site.BaseURL }}">
+        <span class="name">All posts</span>
+        <span class="tail">Back <span class="arrow">&#8599;</span></span>
+      </a>
+    </div>
+  </section>
 {{ end }}

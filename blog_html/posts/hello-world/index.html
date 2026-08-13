@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World → blog.guba.dev</title>
-  <link rel="stylesheet" href="/blog/style.css" />
+  <title>Hello World &rarr; blog.guba.dev</title>
+  <meta name="description" content="Thoughts, projects, and stuff I figured out along the way." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="container">
-    
-  <a href="https://guba.dev/blog/" class="back-link">← back</a>
+  <header class="top">
+    <div class="wrap">
+      <a class="mark" href="https://guba.dev">guba.dev</a>
+      <nav class="nav">
+        <a href="https://guba.dev/projects">Projects</a>
+        <a href="https://guba.dev/blog/" aria-current="page">Blog</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="wrap">
+    
   <article class="post">
-    <header class="post-header">
-      <h1>Hello World</h1>
-      <p class="card-meta">April 6, 2026</p>
-    </header>
-    <div class="post-content">
-      <p>First post. Setting up a blog mostly so I have somewhere to dump things I figure out.</p>
+    <h1>Hello World</h1>
+    <p class="date">6 April 2026</p>
+    <p>First post. Setting up a blog mostly so I have somewhere to dump things I figure out.</p>
 <p>I&rsquo;m Patrick, 3rd year CS student at University of Groningen.</p>
 <p>At the moment I&rsquo;m preoccupied with my wellbeing. I recently started going to the gym and eating healthier. I really enjoy going on long walks or long bike rides. I also have a plan to complete a <a href="https://hyrox.com/">HYROX</a> race by summer 2027, and I&rsquo;m looking for a partner for that.</p>
 <p>Recently I learned how to solder, and I&rsquo;m really proud of myself for that. I&rsquo;ll buy a soldering iron when I get my first paycheck.</p>
@@ -27,10 +33,24 @@
 <p>I also love playing video games whenever I have time. I&rsquo;ve been playing League of Legends since 4th grade, and I love co-op indie games. I lean towards multiplayer, but some of my favourite single-player games are Resident Evil 8, Just Cause 3, Silent Hill 2 (Remake), Far Cry 3, Far Cry Primal, and many more.</p>
 <p>This blog will be a mix of project writeups, things I learned, and whatever else feels worth writing down.</p>
 
-    </div>
   </article>
 
-  </div>
-  <footer>© 2026 <a href="https://guba.dev">guba.dev</a></footer>
+  <section>
+    <div class="rows">
+      <a class="row" href="https://guba.dev/blog/">
+        <span class="name">All posts</span>
+        <span class="tail">Back <span class="arrow">&#8599;</span></span>
+      </a>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 <a href="https://guba.dev">guba.dev</a></span>
+      <span>Groningen</span>
+    </div>
+  </footer>
 </body>
 </html>
