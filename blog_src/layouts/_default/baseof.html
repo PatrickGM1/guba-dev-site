@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &rarr; {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.description }}" />
-  <link rel="stylesheet" href="/style.css?v=20260813" />
+  <script>try{var c=localStorage.getItem('cabinet');if(c)document.documentElement.setAttribute('data-theme',c)}catch(e){}</script>
+  <link rel="stylesheet" href="/style.css?v=20260917" />
+  <script src="/rack.js?v=20260917" defer></script>
 </head>
+
 <body>
-  <header class="top">
-    <div class="wrap">
-      <a class="mark" href="https://guba.dev">guba.dev</a>
-      <nav class="nav">
-        <a href="https://guba.dev/projects">Projects</a>
-        <a href="{{ .Site.BaseURL }}" aria-current="page">Blog</a>
-      </nav>
-    </div>
-  </header>
+  <div class="rack">
+    <aside class="rail rail-l" aria-hidden="true"><ol>{{ range seq 48 1 }}<li>{{ printf "%02d" . }}</li>{{ end }}</ol></aside>
 
-  <main class="wrap">
-    {{ block "main" . }}{{ end }}
-  </main>
+    <div class="bay">
+      <header class="panel">
+        <div class="top">
+          <a class="mark tape" href="https://guba.dev">guba.dev</a>
+          <div class="right"><nav class="nav" aria-label="Site">
+            <a class="nav-port" href="https://guba.dev/projects"><span class="jack" aria-hidden="true"><span class="led"></span></span><span class="tape">Projects</span></a>
+            <a class="nav-port" href="{{ .Site.BaseURL }}" aria-current="page"><span class="jack" aria-hidden="true"><span class="led"></span></span><span class="tape">Blog</span></a>
+          </nav><button class="rocker" type="button" aria-pressed="false" aria-label="Switch to the black cabinet"><span class="sw" aria-hidden="true"></span><span class="tape">Lights</span></button></div>
+        </div>
+      </header>
 
-  <footer>
-    <div class="wrap">
-      <span>&copy; {{ now.Year }} <a href="https://guba.dev">guba.dev</a></span>
-      <span>Groningen</span>
+      <div class="vent" aria-hidden="true"></div>
+
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+
+      <div class="vent" aria-hidden="true"></div>
+
+      <footer class="panel">
+        <div class="row">
+          <span>&copy; {{ now.Year }} <a href="https://guba.dev">guba.dev</a></span>
+          <span>Groningen</span>
+        </div>
+      </footer>
     </div>
-  </footer>
+
+    <aside class="rail rail-r" aria-hidden="true"></aside>
+  </div>
 </body>
+
 </html>

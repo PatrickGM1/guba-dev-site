@@ -1,0 +1,132 @@
+{
+  "title": "Choose the visual world for guba.dev",
+  "question": "The roll assigned Silkscreen Board. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Silkscreen Board",
+      "kicker": "THE ROLL",
+      "lineage": "PCB silkscreen on blue solder mask, assembly drawings, ENIG pads",
+      "thesis": "The site is a populated circuit board: every project is a placed component, every link a gold pad, and the joke is printed in silkscreen where engineers actually print jokes.",
+      "palette": ["#12356f", "#2457a8", "#f4f6f8", "#d9a441", "#c47c3a"],
+      "materials": ["matte blue solder mask", "white silkscreen ink", "gold ENIG pads", "routed copper traces under the mask"],
+      "viewport": "A board outline inset from the viewport edge with fiducials in the corners. Title block top-left reads guba.dev, REV 2026.09; nav sits top-right as off-board connectors J1 PROJECTS, J2 BLOG. Centre-left: PATRICK GHEBA in condensed silkscreen caps at massive scale with designator U1, three compact lines beneath it (Computing Science @ University of Groningen; Absolutely no fucking idea what I'm doing; Groningen, NL). Below the name, an edge-connector row of gold fingers: GITHUB, LINKEDIN, INSTAGRAM. Faint copper traces route across the ground between components; hovering any component lights its net gold.",
+      "risk": "Reads as hardware-nerd if the designators get cute; kept dry, small, and factual it reads as an engineer who labels things properly. Blue on white text at long lengths needs the paper drawing for blog posts.",
+      "raised": [
+        {"from": "challenger-seven-segment", "raise": "Fixed footprint grid: nav, title block, and section slots hold the same position on every surface; an empty slot is drawn as an unpopulated footprint, never collapsed."},
+        {"from": "challenger-ascii", "raise": "One strict grid is the whole composition; the type scale is a single ramp from designator to board title, nothing set off-ramp."},
+        {"from": "challenger-cape", "raise": "Gold appears only on things you can press. One accent that is also the control; nothing decorative wears it."},
+        {"from": "challenger-accretion", "raise": "One large unmarked region of bare mask is held open in the first viewport as the compositional anchor; the name does not fill the frame."},
+        {"from": "challenger-op-art", "raise": "No gray anywhere. White ink at full strength; hierarchy comes from weight and size, never opacity."},
+        {"from": "challenger-illuminated", "raise": "One dominant element outranks three compact lines: the name at giant scale, the intro held to three lines beneath it."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Patch Panel Labels",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "datacenter cable colour code, Brady label tape, patch-panel port maps, rack-unit rulers",
+      "thesis": "The site as the rack you work in: colour-coded runs, printed label tape on every port, and a port map instead of a nav.",
+      "palette": ["#f2f2ef", "#111111", "#1f6fd6", "#f2b705", "#d63a2f", "#2e9e4f"],
+      "materials": ["white label tape with black thermal print", "colour-coded patch cable jackets", "brushed rack steel", "rack-unit ruler ticks"],
+      "viewport": "A left rail is a rack-unit ruler numbered 1U to 42U; the name is a wide printed label across the top row; each section is a port field where projects are ports with a coloured cable jacket per category (blue personal, yellow university) and a printed label under each. Links are printed tape.",
+      "risk": "Label-tape and industrial signage is a look other brutalist personal sites already wear; distinctive here through the colour code, less so at a glance."
+    },
+    {
+      "id": "challenger-seven-segment",
+      "label": "Seven-Segment Mask",
+      "verdict": "declined",
+      "lineage": "bedside clocks, gas-station price totems, scoreboards",
+      "thesis": "The site as a fixed eight-cell mask where only lit segments change.",
+      "palette": ["#0b0b0c", "#ff2a1a", "#3a0f0c"],
+      "materials": ["LED segments", "ghost cells", "matte black bezel"],
+      "viewport": "Four giant digits and a scoreboard of projects in a rigid cell grid.",
+      "risk": "Prose does not survive a seven-segment alphabet.",
+      "case": "Loses both: recruiters do not identify with a clock, and paragraphs cannot be set in segments.",
+      "kept": "Absence drawn as deliberately as presence: fixed slots, ghosted when empty.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-seven-segment-alarm-clock-hero.webp"
+    },
+    {
+      "id": "challenger-ascii",
+      "label": "ASCII Live Scene",
+      "verdict": "declined",
+      "lineage": "typewriter-glyph scene renders, phosphor terminals",
+      "thesis": "The whole page as one monospace glyph grid where density is light.",
+      "palette": ["#000000", "#33ff66"],
+      "materials": ["phosphor green", "monospace cell grid"],
+      "viewport": "A live glyph-rendered scene with the name and links inside the same grid.",
+      "risk": "Fake-terminal is the gimmick the brief named.",
+      "case": "Loses both: reads as the hacker-portfolio cliché and hurts scanability for a recruiter.",
+      "kept": "One strict grid as the entire composition; a single type ramp.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render-hero.webp"
+    },
+    {
+      "id": "challenger-cape",
+      "label": "Drawcord Cape",
+      "verdict": "declined",
+      "lineage": "transforming silk cape with hidden drawcord channels",
+      "thesis": "Black silk ground, one gold cord as both accent and control.",
+      "palette": ["#0a0a0a", "#c9a24a", "#3b3f45"],
+      "materials": ["matte black silk", "gold cord", "graphite stitching"],
+      "viewport": "A flat black plane that gathers into ribs as you pull one gold cord.",
+      "risk": "A fashion object for a CS student's CV page.",
+      "case": "Loses both: no audience identification, and the transformation metaphor carries none of the product's facts.",
+      "kept": "The accent is the control: gold only on what you can press.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape-hero.webp"
+    },
+    {
+      "id": "challenger-accretion",
+      "label": "Accretion Disk",
+      "verdict": "declined",
+      "lineage": "black-hole accretion disk, photon ring, event horizon",
+      "thesis": "Void black with concentric time-dilated rings and a gold photon-ring accent.",
+      "palette": ["#000000", "#8fc4ff", "#d8442a", "#e0b14a"],
+      "materials": ["void black", "graded disk light", "hairline ring bands"],
+      "viewport": "Labels orbit the rim of a warped disk; the centre stays unmarked black.",
+      "risk": "A shader spectacle with nothing to say about Patrick.",
+      "case": "Loses both: no audience link and the content has no natural place on a rim.",
+      "kept": "One large unmarked region held open as the compositional anchor.",
+      "hero": "https://impeccable.style/worlds/cards/galaxies-nebulae-deep-time-accretion-disk-threshold-hero.webp"
+    },
+    {
+      "id": "challenger-op-art",
+      "label": "Op-Art Repeat",
+      "verdict": "declined",
+      "lineage": "engineered-seamless op-art textile repeat",
+      "thesis": "Hard black-and-white wave field, no gray, seam never found.",
+      "palette": ["#000000", "#ffffff"],
+      "materials": ["matte printed cloth", "generative SVG wave"],
+      "viewport": "A continuous flexing wave with controls as amplitude regions.",
+      "risk": "The field fights every line of text laid over it.",
+      "case": "Loses both: a moving wave ground undermines the ten-second recruiter read and says nothing about the person.",
+      "kept": "Total palette commitment: no gray whatsoever, hierarchy from weight and size.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-op-art-textile-repeat-hero.webp"
+    },
+    {
+      "id": "challenger-illuminated",
+      "label": "Illuminated Initial",
+      "verdict": "declined",
+      "lineage": "historiated initial, gold-leaf chamber, marginal vine",
+      "thesis": "One giant initial outranks three lines of compact text; the margin is inhabited.",
+      "palette": ["#f1e6c8", "#c9a227", "#1f4fa3", "#b3261e"],
+      "materials": ["gold leaf", "vellum", "lapis vine"],
+      "viewport": "A red P opens into a gold chamber; the intro sits in three gothic lines beside it.",
+      "risk": "Vellum and gothic bookhand on a datacenter technician's site.",
+      "case": "Loses both: the audience does not identify with a manuscript, and the ornament works against the serious tone asked for.",
+      "kept": "One dominant element at giant scale, the text block held to three compact lines.",
+      "hero": "https://impeccable.style/worlds/cards/typography-calligraphy-writing-illuminated-initial-vine-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The dark-mode developer portfolio, executed impeccably: hero, muted intro, link chips, project rows.",
+    "palette": ["#0d0d0f", "#f0efec", "#96969d", "#c9b48c"],
+    "materials": ["near-black ground", "system sans", "hairline rules", "one muted accent"],
+    "viewport": "Name, one-line context, social chips, then a hairline list of projects and posts.",
+    "risk": "Indistinguishable from the current site and from most developer portfolios by design."
+  },
+  "steer": true
+}

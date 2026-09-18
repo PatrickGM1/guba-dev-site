@@ -1,16 +1,38 @@
 {{ define "main" }}
-  <article class="post">
-    <h1>{{ .Title }}</h1>
-    <p class="date">{{ .Date.Format "2 January 2006" }}</p>
-    {{ .Content }}
-  </article>
-
-  <section>
-    <div class="rows">
-      <a class="row" href="{{ .Site.BaseURL }}">
-        <span class="name">All posts</span>
-        <span class="tail">Back <span class="arrow">&#8599;</span></span>
-      </a>
+  <section class="panel tall sheet-panel">
+    <div class="desk">
+      <div class="loom left" aria-hidden="true">
+        <i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+      </div>
+      <article class="sheet">
+        <h1>{{ .Title }}</h1>
+        <p class="date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+        <div class="post">
+          {{ .Content }}
+        </div>
+      </article>
+      <div class="loom" aria-hidden="true">
+        <i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+      </div>
     </div>
+  </section>
+
+  <div class="vent" aria-hidden="true"></div>
+
+  <section class="panel tall" aria-label="Back">
+    <ul class="ports">
+      <li>
+        <a class="port green" href="{{ .Site.BaseURL }}">
+          <span class="num" aria-hidden="true">00</span>
+          <span class="jack" aria-hidden="true"><span class="led up" style="--i:0"></span></span>
+          <span class="cable">
+            <span class="tape lbl">All posts</span>
+            <span class="spacer" aria-hidden="true"></span>
+            <span class="tape flag" aria-hidden="true">guba.dev/blog</span>
+            <span class="plug" aria-hidden="true"><i></i></span>
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>
 {{ end }}

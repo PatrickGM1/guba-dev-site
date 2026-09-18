@@ -2,6 +2,7 @@
 title = 'Hello World'
 date = 2026-04-06
 draft = false
+summary = "First post. Setting up a blog mostly so I have somewhere to dump things I figure out."
 +++
 
 First post. Setting up a blog mostly so I have somewhere to dump things I figure out.

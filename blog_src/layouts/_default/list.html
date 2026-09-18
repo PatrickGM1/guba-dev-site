@@ -1,24 +1,49 @@
 {{ define "main" }}
-  <div class="hero">
-    <h1>Blog</h1>
-    <p class="lede">{{ .Site.Params.description }}</p>
-  </div>
-
-  <section>
-    <p class="label">Posts</p>
-    <div class="rows">
-      {{ $pages := where .Site.RegularPages "Type" "posts" }}
-      {{ if $pages }}
-        {{ range $pages }}
-          <a class="row" href="{{ .Permalink }}">
-            <span class="name">{{ .Title }}</span>
-            <span class="tail">{{ .Date.Format "2 Jan 2006" }} <span class="arrow">&#8599;</span></span>
-            {{ with .Summary }}<span class="desc">{{ . | plainify | htmlUnescape | truncate 190 }}</span>{{ end }}
-          </a>
-        {{ end }}
-      {{ else }}
-        <p class="empty">No posts yet. Check back soon.</p>
-      {{ end }}
+  <section class="panel name tall" aria-labelledby="title">
+    <div class="name-grid">
+      <div>
+        <h1 class="tape" id="title">Blog</h1>
+        <div class="lines">
+          <p class="tape plain">{{ .Site.Params.description }}</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <div class="vent" aria-hidden="true"></div>
+
+  <section class="panel tall" aria-labelledby="posts">
+    <h2 id="posts"><span class="tape green">Posts</span></h2>
+    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ if $pages }}
+      <ul class="ports">
+        {{ range $i, $p := $pages }}
+        <li>
+          <a class="port green" href="{{ $p.Permalink }}">
+            <span class="num" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+            <span class="jack" aria-hidden="true"><span class="led up" style="--i:{{ $i }}"></span></span>
+            <span class="cable">
+              <span class="tape lbl">{{ $p.Title }}</span>
+              <span class="tail"><time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2 Jan 2006" }}</time></span>
+              <span class="spacer" aria-hidden="true"></span>
+              <span class="tape flag" aria-hidden="true">{{ strings.TrimPrefix "https://" $p.Permalink }}</span>
+              <span class="plug" aria-hidden="true"><i></i></span>
+            </span>
+            {{ with $p.Summary }}<span class="desc">{{ . | plainify | htmlUnescape | truncate 190 }}</span>{{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <ul class="ports">
+        <li>
+          <div class="port green empty-port">
+            <span class="num" aria-hidden="true">01</span>
+            <span class="jack" aria-hidden="true"><span class="led"></span></span>
+            <span class="cable"><span class="tape lbl">No posts yet</span><span class="tail">port unpopulated</span></span>
+          </div>
+        </li>
+      </ul>
+    {{ end }}
   </section>
 {{ end }}

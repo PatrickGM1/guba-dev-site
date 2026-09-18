@@ -1,0 +1,19 @@
+# Impeccable: installed skill/agents (per-machine, contains platform binaries)
+.claude/skills/impeccable/
+.claude/agents/impeccable-*.md
+.claude/settings.local.json
+
+# Impeccable: per-machine config and runtime state
+.impeccable/config.local.json
+.impeccable/build/
+.impeccable/live/
+.impeccable/questions/
+.impeccable/review/
+
+# Hugo
+blog_src/.hugo_build.lock
+blog_src/resources/_gen/
+
+# OS / editor
+.DS_Store
+Thumbs.db

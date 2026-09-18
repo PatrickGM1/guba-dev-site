@@ -1,0 +1,829 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-18T00:00:00+02:00",
+  "title": "Design System: guba.dev",
+  "source": {
+    "stylesheet": "public_html/style.css",
+    "script": "public_html/rack.js",
+    "seed": "638ee8ba"
+  },
+  "extensions": {
+    "colorMeta": {
+      "rack": {
+        "role": "neutral",
+        "displayName": "Cabinet",
+        "canonical": "oklch(92% 0.005 107)",
+        "tonalRamp": [
+          "oklch(15% 0.005 107)",
+          "oklch(25% 0.005 107)",
+          "oklch(35% 0.005 107)",
+          "oklch(45% 0.005 107)",
+          "oklch(55% 0.005 107)",
+          "oklch(65% 0.005 107)",
+          "oklch(80% 0.005 107)",
+          "oklch(95% 0.005 107)"
+        ],
+        "cssVar": "--rack",
+        "darkCabinet": "#0b0b0c"
+      },
+      "plate": {
+        "role": "neutral",
+        "displayName": "Faceplate",
+        "canonical": "oklch(87% 0.007 107)",
+        "tonalRamp": [
+          "oklch(15% 0.007 107)",
+          "oklch(25% 0.007 107)",
+          "oklch(35% 0.007 107)",
+          "oklch(45% 0.007 107)",
+          "oklch(55% 0.007 107)",
+          "oklch(65% 0.007 107)",
+          "oklch(80% 0.007 107)",
+          "oklch(95% 0.007 107)"
+        ],
+        "cssVar": "--plate",
+        "darkCabinet": "#2c2c31"
+      },
+      "plate-hi": {
+        "role": "neutral",
+        "displayName": "Plate Highlight",
+        "canonical": "oklch(95% 0.005 107)",
+        "tonalRamp": [
+          "oklch(15% 0.005 107)",
+          "oklch(25% 0.005 107)",
+          "oklch(35% 0.005 107)",
+          "oklch(45% 0.005 107)",
+          "oklch(55% 0.005 107)",
+          "oklch(65% 0.005 107)",
+          "oklch(80% 0.005 107)",
+          "oklch(95% 0.005 107)"
+        ],
+        "cssVar": "--plate-hi",
+        "darkCabinet": "#3f3f45"
+      },
+      "plate-lo": {
+        "role": "neutral",
+        "displayName": "Plate Shade",
+        "canonical": "oklch(77% 0.008 107)",
+        "tonalRamp": [
+          "oklch(15% 0.008 107)",
+          "oklch(25% 0.008 107)",
+          "oklch(35% 0.008 107)",
+          "oklch(45% 0.008 107)",
+          "oklch(55% 0.008 107)",
+          "oklch(65% 0.008 107)",
+          "oklch(80% 0.008 107)",
+          "oklch(95% 0.008 107)"
+        ],
+        "cssVar": "--plate-lo",
+        "darkCabinet": "#0b0b0c"
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Print",
+        "canonical": "oklch(19% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(25% 0.000 90)",
+          "oklch(35% 0.000 90)",
+          "oklch(45% 0.000 90)",
+          "oklch(55% 0.000 90)",
+          "oklch(65% 0.000 90)",
+          "oklch(80% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ],
+        "cssVar": "--text",
+        "darkCabinet": "#ecece8"
+      },
+      "tape": {
+        "role": "neutral",
+        "displayName": "Tape",
+        "canonical": "oklch(99% 0.004 106)",
+        "tonalRamp": [
+          "oklch(15% 0.004 106)",
+          "oklch(25% 0.004 106)",
+          "oklch(35% 0.004 106)",
+          "oklch(45% 0.004 106)",
+          "oklch(55% 0.004 106)",
+          "oklch(65% 0.004 106)",
+          "oklch(80% 0.004 106)",
+          "oklch(95% 0.004 106)"
+        ],
+        "cssVar": "--tape",
+        "darkCabinet": "unchanged"
+      },
+      "tape-2": {
+        "role": "neutral",
+        "displayName": "Tape 2",
+        "canonical": "oklch(94% 0.003 106)",
+        "tonalRamp": [
+          "oklch(15% 0.003 106)",
+          "oklch(25% 0.003 106)",
+          "oklch(35% 0.003 106)",
+          "oklch(45% 0.003 106)",
+          "oklch(55% 0.003 106)",
+          "oklch(65% 0.003 106)",
+          "oklch(80% 0.003 106)",
+          "oklch(95% 0.003 106)"
+        ],
+        "cssVar": "--tape-2",
+        "darkCabinet": "unchanged"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(19% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(25% 0.000 90)",
+          "oklch(35% 0.000 90)",
+          "oklch(45% 0.000 90)",
+          "oklch(55% 0.000 90)",
+          "oklch(65% 0.000 90)",
+          "oklch(80% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ],
+        "cssVar": "--ink",
+        "darkCabinet": "unchanged"
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Rail",
+        "canonical": "oklch(23% 0.004 286)",
+        "tonalRamp": [
+          "oklch(15% 0.004 286)",
+          "oklch(25% 0.004 286)",
+          "oklch(35% 0.004 286)",
+          "oklch(45% 0.004 286)",
+          "oklch(55% 0.004 286)",
+          "oklch(65% 0.004 286)",
+          "oklch(80% 0.004 286)",
+          "oklch(95% 0.004 286)"
+        ],
+        "cssVar": "--rail",
+        "darkCabinet": "#050506"
+      },
+      "rail-ink": {
+        "role": "neutral",
+        "displayName": "Rail Ink",
+        "canonical": "oklch(96% 0.005 106)",
+        "tonalRamp": [
+          "oklch(15% 0.005 106)",
+          "oklch(25% 0.005 106)",
+          "oklch(35% 0.005 106)",
+          "oklch(45% 0.005 106)",
+          "oklch(55% 0.005 106)",
+          "oklch(65% 0.005 106)",
+          "oklch(80% 0.005 106)",
+          "oklch(95% 0.005 106)"
+        ],
+        "cssVar": "--rail-ink",
+        "darkCabinet": "unchanged"
+      },
+      "hole": {
+        "role": "neutral",
+        "displayName": "Hole",
+        "canonical": "oklch(15% 0.002 286)",
+        "tonalRamp": [
+          "oklch(15% 0.002 286)",
+          "oklch(25% 0.002 286)",
+          "oklch(35% 0.002 286)",
+          "oklch(45% 0.002 286)",
+          "oklch(55% 0.002 286)",
+          "oklch(65% 0.002 286)",
+          "oklch(80% 0.002 286)",
+          "oklch(95% 0.002 286)"
+        ],
+        "cssVar": "--hole",
+        "darkCabinet": "#2a2a2e"
+      },
+      "jack": {
+        "role": "neutral",
+        "displayName": "Jack",
+        "canonical": "oklch(18% 0.004 286)",
+        "tonalRamp": [
+          "oklch(15% 0.004 286)",
+          "oklch(25% 0.004 286)",
+          "oklch(35% 0.004 286)",
+          "oklch(45% 0.004 286)",
+          "oklch(55% 0.004 286)",
+          "oklch(65% 0.004 286)",
+          "oklch(80% 0.004 286)",
+          "oklch(95% 0.004 286)"
+        ],
+        "cssVar": "--jack",
+        "darkCabinet": "#0a0a0b"
+      },
+      "jack-slot": {
+        "role": "neutral",
+        "displayName": "Jack Slot",
+        "canonical": "oklch(35% 0.009 286)",
+        "tonalRamp": [
+          "oklch(15% 0.009 286)",
+          "oklch(25% 0.009 286)",
+          "oklch(35% 0.009 286)",
+          "oklch(45% 0.009 286)",
+          "oklch(55% 0.009 286)",
+          "oklch(65% 0.009 286)",
+          "oklch(80% 0.009 286)",
+          "oklch(95% 0.009 286)"
+        ],
+        "cssVar": "--jack-slot",
+        "darkCabinet": "#303035"
+      },
+      "bezel": {
+        "role": "neutral",
+        "displayName": "Bezel",
+        "canonical": "oklch(24% 0.008 286)",
+        "tonalRamp": [
+          "oklch(15% 0.008 286)",
+          "oklch(25% 0.008 286)",
+          "oklch(35% 0.008 286)",
+          "oklch(45% 0.008 286)",
+          "oklch(55% 0.008 286)",
+          "oklch(65% 0.008 286)",
+          "oklch(80% 0.008 286)",
+          "oklch(95% 0.008 286)"
+        ],
+        "cssVar": "--bezel",
+        "darkCabinet": "#17171a"
+      },
+      "bezel-hi": {
+        "role": "neutral",
+        "displayName": "Bezel Highlight",
+        "canonical": "oklch(35% 0.010 286)",
+        "tonalRamp": [
+          "oklch(15% 0.010 286)",
+          "oklch(25% 0.010 286)",
+          "oklch(35% 0.010 286)",
+          "oklch(45% 0.010 286)",
+          "oklch(55% 0.010 286)",
+          "oklch(65% 0.010 286)",
+          "oklch(80% 0.010 286)",
+          "oklch(95% 0.010 286)"
+        ],
+        "cssVar": "--bezel-hi",
+        "darkCabinet": "#34343a"
+      },
+      "bezel-print": {
+        "role": "neutral",
+        "displayName": "Bezel Print",
+        "canonical": "oklch(88% 0.007 107)",
+        "tonalRamp": [
+          "oklch(15% 0.007 107)",
+          "oklch(25% 0.007 107)",
+          "oklch(35% 0.007 107)",
+          "oklch(45% 0.007 107)",
+          "oklch(55% 0.007 107)",
+          "oklch(65% 0.007 107)",
+          "oklch(80% 0.007 107)",
+          "oklch(95% 0.007 107)"
+        ],
+        "note": "Literal in style.css, not a custom property."
+      },
+      "sled": {
+        "role": "neutral",
+        "displayName": "Sled",
+        "canonical": "oklch(29% 0.009 286)",
+        "tonalRamp": [
+          "oklch(15% 0.009 286)",
+          "oklch(25% 0.009 286)",
+          "oklch(35% 0.009 286)",
+          "oklch(45% 0.009 286)",
+          "oklch(55% 0.009 286)",
+          "oklch(65% 0.009 286)",
+          "oklch(80% 0.009 286)",
+          "oklch(95% 0.009 286)"
+        ],
+        "cssVar": "--sled",
+        "darkCabinet": "#222226"
+      },
+      "sled-hi": {
+        "role": "neutral",
+        "displayName": "Sled Highlight",
+        "canonical": "oklch(36% 0.012 286)",
+        "tonalRamp": [
+          "oklch(15% 0.012 286)",
+          "oklch(25% 0.012 286)",
+          "oklch(35% 0.012 286)",
+          "oklch(45% 0.012 286)",
+          "oklch(55% 0.012 286)",
+          "oklch(65% 0.012 286)",
+          "oklch(80% 0.012 286)",
+          "oklch(95% 0.012 286)"
+        ],
+        "cssVar": "--sled-hi",
+        "darkCabinet": "#36363c"
+      },
+      "handle": {
+        "role": "neutral",
+        "displayName": "Handle",
+        "canonical": "oklch(83% 0.007 107)",
+        "tonalRamp": [
+          "oklch(15% 0.007 107)",
+          "oklch(25% 0.007 107)",
+          "oklch(35% 0.007 107)",
+          "oklch(45% 0.007 107)",
+          "oklch(55% 0.007 107)",
+          "oklch(65% 0.007 107)",
+          "oklch(80% 0.007 107)",
+          "oklch(95% 0.007 107)"
+        ],
+        "cssVar": "--handle"
+      },
+      "handle-lo": {
+        "role": "neutral",
+        "displayName": "Handle Shade",
+        "canonical": "oklch(65% 0.007 107)",
+        "tonalRamp": [
+          "oklch(15% 0.007 107)",
+          "oklch(25% 0.007 107)",
+          "oklch(35% 0.007 107)",
+          "oklch(45% 0.007 107)",
+          "oklch(55% 0.007 107)",
+          "oklch(65% 0.007 107)",
+          "oklch(80% 0.007 107)",
+          "oklch(95% 0.007 107)"
+        ],
+        "cssVar": "--handle-lo"
+      },
+      "strap": {
+        "role": "neutral",
+        "displayName": "Strap",
+        "canonical": "oklch(23% 0.004 286)",
+        "tonalRamp": [
+          "oklch(15% 0.004 286)",
+          "oklch(25% 0.004 286)",
+          "oklch(35% 0.004 286)",
+          "oklch(45% 0.004 286)",
+          "oklch(55% 0.004 286)",
+          "oklch(65% 0.004 286)",
+          "oklch(80% 0.004 286)",
+          "oklch(95% 0.004 286)"
+        ],
+        "cssVar": "--strap",
+        "darkCabinet": "#3d3d44"
+      },
+      "cable-blue": {
+        "role": "primary",
+        "displayName": "Cable Blue",
+        "canonical": "oklch(52% 0.182 260)",
+        "tonalRamp": [
+          "oklch(15% 0.182 260)",
+          "oklch(25% 0.182 260)",
+          "oklch(35% 0.182 260)",
+          "oklch(45% 0.182 260)",
+          "oklch(55% 0.182 260)",
+          "oklch(65% 0.182 260)",
+          "oklch(80% 0.182 260)",
+          "oklch(95% 0.182 260)"
+        ],
+        "cssVar": "--c-blue",
+        "darkCabinet": "unchanged"
+      },
+      "cable-yellow": {
+        "role": "primary",
+        "displayName": "Cable Yellow",
+        "canonical": "oklch(81% 0.166 85)",
+        "tonalRamp": [
+          "oklch(15% 0.166 85)",
+          "oklch(25% 0.166 85)",
+          "oklch(35% 0.166 85)",
+          "oklch(45% 0.166 85)",
+          "oklch(55% 0.166 85)",
+          "oklch(65% 0.166 85)",
+          "oklch(80% 0.166 85)",
+          "oklch(95% 0.166 85)"
+        ],
+        "cssVar": "--c-yellow",
+        "darkCabinet": "unchanged"
+      },
+      "cable-green": {
+        "role": "primary",
+        "displayName": "Cable Green",
+        "canonical": "oklch(63% 0.153 153)",
+        "tonalRamp": [
+          "oklch(15% 0.153 153)",
+          "oklch(25% 0.153 153)",
+          "oklch(35% 0.153 153)",
+          "oklch(45% 0.153 153)",
+          "oklch(55% 0.153 153)",
+          "oklch(65% 0.153 153)",
+          "oklch(80% 0.153 153)",
+          "oklch(95% 0.153 153)"
+        ],
+        "cssVar": "--c-green",
+        "darkCabinet": "unchanged"
+      },
+      "cable-orange": {
+        "role": "primary",
+        "displayName": "Cable Orange",
+        "canonical": "oklch(68% 0.185 45)",
+        "tonalRamp": [
+          "oklch(15% 0.185 45)",
+          "oklch(25% 0.185 45)",
+          "oklch(35% 0.185 45)",
+          "oklch(45% 0.185 45)",
+          "oklch(55% 0.185 45)",
+          "oklch(65% 0.185 45)",
+          "oklch(80% 0.185 45)",
+          "oklch(95% 0.185 45)"
+        ],
+        "cssVar": "--c-orange",
+        "darkCabinet": "unchanged"
+      },
+      "led-off": {
+        "role": "neutral",
+        "displayName": "LED Off",
+        "canonical": "oklch(35% 0.007 286)",
+        "tonalRamp": [
+          "oklch(15% 0.007 286)",
+          "oklch(25% 0.007 286)",
+          "oklch(35% 0.007 286)",
+          "oklch(45% 0.007 286)",
+          "oklch(55% 0.007 286)",
+          "oklch(65% 0.007 286)",
+          "oklch(80% 0.007 286)",
+          "oklch(95% 0.007 286)"
+        ],
+        "cssVar": "--led-off",
+        "darkCabinet": "unchanged"
+      },
+      "led-amber": {
+        "role": "secondary",
+        "displayName": "Link Amber",
+        "canonical": "oklch(81% 0.165 75)",
+        "tonalRamp": [
+          "oklch(15% 0.165 75)",
+          "oklch(25% 0.165 75)",
+          "oklch(35% 0.165 75)",
+          "oklch(45% 0.165 75)",
+          "oklch(55% 0.165 75)",
+          "oklch(65% 0.165 75)",
+          "oklch(80% 0.165 75)",
+          "oklch(95% 0.165 75)"
+        ],
+        "cssVar": "--led-amber",
+        "darkCabinet": "unchanged"
+      },
+      "led-green": {
+        "role": "secondary",
+        "displayName": "Link Green",
+        "canonical": "oklch(80% 0.209 149)",
+        "tonalRamp": [
+          "oklch(15% 0.209 149)",
+          "oklch(25% 0.209 149)",
+          "oklch(35% 0.209 149)",
+          "oklch(45% 0.209 149)",
+          "oklch(55% 0.209 149)",
+          "oklch(65% 0.209 149)",
+          "oklch(80% 0.209 149)",
+          "oklch(95% 0.209 149)"
+        ],
+        "cssVar": "--led-green",
+        "darkCabinet": "unchanged"
+      },
+      "led-ident": {
+        "role": "secondary",
+        "displayName": "Ident Blue",
+        "canonical": "oklch(58% 0.164 257)",
+        "tonalRamp": [
+          "oklch(15% 0.164 257)",
+          "oklch(25% 0.164 257)",
+          "oklch(35% 0.164 257)",
+          "oklch(45% 0.164 257)",
+          "oklch(55% 0.164 257)",
+          "oklch(65% 0.164 257)",
+          "oklch(80% 0.164 257)",
+          "oklch(95% 0.164 257)"
+        ],
+        "note": "Literal in style.css, not a custom property."
+      },
+      "plug-body": {
+        "role": "neutral",
+        "displayName": "Plug Body",
+        "canonical": "oklch(97% 0.003 128)",
+        "tonalRamp": [
+          "oklch(15% 0.003 128)",
+          "oklch(25% 0.003 128)",
+          "oklch(35% 0.003 128)",
+          "oklch(45% 0.003 128)",
+          "oklch(55% 0.003 128)",
+          "oklch(65% 0.003 128)",
+          "oklch(80% 0.003 128)",
+          "oklch(95% 0.003 128)"
+        ],
+        "note": "Literal in style.css, not a custom property."
+      },
+      "plug-edge": {
+        "role": "neutral",
+        "displayName": "Plug Edge",
+        "canonical": "oklch(65% 0.006 146)",
+        "tonalRamp": [
+          "oklch(15% 0.006 146)",
+          "oklch(25% 0.006 146)",
+          "oklch(35% 0.006 146)",
+          "oklch(45% 0.006 146)",
+          "oklch(55% 0.006 146)",
+          "oklch(65% 0.006 146)",
+          "oklch(80% 0.006 146)",
+          "oklch(95% 0.006 146)"
+        ],
+        "note": "Literal in style.css, not a custom property."
+      },
+      "contact-gold": {
+        "role": "secondary",
+        "displayName": "Contact Gold",
+        "canonical": "oklch(75% 0.130 80)",
+        "tonalRamp": [
+          "oklch(15% 0.130 80)",
+          "oklch(25% 0.130 80)",
+          "oklch(35% 0.130 80)",
+          "oklch(45% 0.130 80)",
+          "oklch(55% 0.130 80)",
+          "oklch(65% 0.130 80)",
+          "oklch(80% 0.130 80)",
+          "oklch(95% 0.130 80)"
+        ],
+        "note": "Literal in style.css, not a custom property."
+      }
+    },
+    "themes": {
+      "white-cabinet": {
+        "selector": ":root",
+        "note": "Default. color-scheme: light."
+      },
+      "black-cabinet": {
+        "selector": "@media (prefers-color-scheme: dark) :root:not([data-theme=\"light\"]), :root[data-theme=\"dark\"]",
+        "note": "Only metal tokens change; tape, ink, cables and LEDs are unchanged. Overridden by the LIGHTS rocker, stored as localStorage `cabinet`."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Tape",
+        "purpose": "The page name on the widest tape (PATRICK GHEBA, PROJECTS, BLOG). Upper-case Barlow Condensed 700."
+      },
+      "headline": {
+        "displayName": "Sheet Headline",
+        "purpose": "Blog post title on the sheet; post h2 at 1.5rem/1.05 in the same voice."
+      },
+      "title": {
+        "displayName": "Plain Tape",
+        "purpose": "Sentence-case Barlow 500 tape: name lines, bezel name, sled labels (0.9375rem)."
+      },
+      "body": {
+        "displayName": "Faceplate Print",
+        "purpose": "Body text and cable labels; blog prose at 1.0625rem/1.6 in 72ch; descriptions at 0.9375rem, 56-62ch."
+      },
+      "label": {
+        "displayName": "Label Print",
+        "purpose": "Panel heading tape; nav at 0.8125rem, legend and rocker at 0.75rem. Always upper-case."
+      },
+      "mono": {
+        "displayName": "Machine Print",
+        "purpose": "Port numbers, U numbers (10px), dates, cable flags (0.75rem), service tag (0.6875rem), code."
+      }
+    },
+    "fonts": [
+      {
+        "family": "Barlow",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "src": "/fonts/barlow-{400,500,600}.woff2"
+      },
+      {
+        "family": "Barlow Condensed",
+        "weights": [
+          600,
+          700
+        ],
+        "src": "/fonts/barlow-condensed-{600,700}.woff2"
+      },
+      {
+        "family": "Sometype Mono",
+        "weights": "400 500 (variable)",
+        "src": "/fonts/sometype-mono.woff2"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "tape-lift",
+        "value": "filter: drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14))",
+        "purpose": "Every .tape; follows the clip-path."
+      },
+      {
+        "name": "tape-shadow",
+        "value": "0 1px 1px rgba(0,0,0,.22), 0 3px 8px rgba(0,0,0,.14)",
+        "darkCabinet": "0 1px 1px rgba(0,0,0,.6), 0 3px 8px rgba(0,0,0,.45)",
+        "purpose": "The blog sheet on the plate (--tape-shadow)."
+      },
+      {
+        "name": "plate-edge",
+        "value": "inset 0 1px 0 var(--plate-hi), inset 0 -1px 0 var(--plate-lo)",
+        "purpose": "Every panel; the edge-light pair."
+      },
+      {
+        "name": "bezel-seat",
+        "value": "inset 0 1px 0 var(--bezel-hi), inset 0 -1px 0 #000, 0 2px 4px rgba(0,0,0,.45)",
+        "purpose": "Server front."
+      },
+      {
+        "name": "jack-lip",
+        "value": "inset 0 1px 0 rgba(255,255,255,.08), 0 1px 0 rgba(255,255,255,.35)",
+        "purpose": "RJ45 sockets and the rocker housing."
+      },
+      {
+        "name": "cable-jacket",
+        "value": "inset 0 -2px 0 rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.25)",
+        "purpose": "Cable runs, NIC lead, legend swatches; rotated 90deg in the loom."
+      },
+      {
+        "name": "led-glow",
+        "value": "0 0 5px <led colour>",
+        "purpose": "Lit LEDs only; 4px on ident LEDs. Off LEDs: inset 0 0 0 1px rgba(0,0,0,.5)."
+      },
+      {
+        "name": "screw",
+        "value": "0 1px 1px rgba(0,0,0,.35)",
+        "purpose": "Panel mounting screws."
+      }
+    ],
+    "motion": [
+      {
+        "name": "linkup",
+        "value": "0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; delay calc(0.25s + var(--i) * 80ms)",
+        "purpose": "On load, .led.up runs off -> amber -> green once, staggered by --i. Disabled under reduced motion (green static)."
+      },
+      {
+        "name": "act",
+        "value": "0.5s steps(2, end) infinite",
+        "purpose": "Activity blink (green/amber) on a hovered or focused port's jack LED and sled link LED."
+      },
+      {
+        "name": "flag-reveal",
+        "value": "opacity 0.16s ease-out, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Cable flag fades in and rises 4px on port hover/focus."
+      },
+      {
+        "name": "tape-invert",
+        "value": "none",
+        "purpose": "Tape hover inversion is instant; no transition."
+      },
+      {
+        "name": "rocker-paddle",
+        "value": "background 0.15s, transform 0.15s",
+        "purpose": "Pressed paddle sinks to scaleY(0.85)."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none !important; animation: none !important",
+        "purpose": "prefers-reduced-motion: reduce kills every transition and animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-rack",
+        "value": "720px",
+        "note": "max-width. Rails 22px without ruler, panel inset 20px, tails/flags/IO hidden, name grid one column, loom removed."
+      }
+    ],
+    "rhythm": {
+      "u": "48px",
+      "note": "All equipment heights are whole rack units; rack.js pads .panel, .server and .bezel to the next 48px boundary after fonts load and on resize."
+    }
+  },
+  "components": [
+    {
+      "name": "Label Tape",
+      "kind": "chip",
+      "refersTo": "tape",
+      "description": "White label tape with black condensed print and scissor-cut ends; every heading and link label.",
+      "html": "<span class=\"ds-tape\">Elsewhere</span> <span class=\"ds-tape ds-tape-yellow\">University</span> <span class=\"ds-tape ds-tape-green\">Posts</span> <span class=\"ds-tape ds-tape-plain\">Absolutely no fucking idea what I'm doing.</span>",
+      "css": ".ds-tape{display:inline-block;background:var(--tape,#fbfbf8);color:var(--ink,#131313);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1.1;font-size:.875rem;padding:.28em .6em .24em;clip-path:polygon(0 0,100% .06em,calc(100% - .1em) 100%,.08em 100%);filter:drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14));white-space:nowrap}.ds-tape-plain{font-family:Barlow,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:500;text-transform:none;letter-spacing:0;line-height:1.3;font-size:1.125rem;white-space:normal}.ds-tape-blue{background:var(--c-blue,#1e63d0);color:#fff}.ds-tape-yellow{background:var(--c-yellow,#f2b807);color:var(--ink,#131313)}.ds-tape-green{background:var(--c-green,#22a35a);color:#fff}.ds-tape-orange{background:var(--c-orange,#f26b1d);color:#fff}"
+    },
+    {
+      "name": "Port",
+      "kind": "nav",
+      "refersTo": "port",
+      "description": "The link: mono number, RJ45 jack with LED, cable run carrying the label tape, loose plug at the far end. Hover inverts the tape, blinks the LED and shows the cable flag.",
+      "html": "<ul class=\"ds-ports\"><li><a class=\"ds-port\" href=\"#\"><span class=\"ds-num\">01</span><span class=\"ds-jack\"><span class=\"ds-led up\"></span></span><span class=\"ds-cable\"><span class=\"ds-tape ds-lbl\">GitHub</span><span class=\"ds-spacer\"></span><span class=\"ds-tape ds-flag\">github.com/PatrickGM1</span><span class=\"ds-plug\"><i></i></span></span></a></li><li><a class=\"ds-port ds-blue\" href=\"#\"><span class=\"ds-num\">04</span><span class=\"ds-jack\"><span class=\"ds-led up\"></span></span><span class=\"ds-cable\"><span class=\"ds-tape ds-lbl\">Projects</span><span class=\"ds-spacer\"></span><span class=\"ds-tape ds-flag\">guba.dev/projects</span><span class=\"ds-plug\"><i></i></span></span></a></li></ul>",
+      "css": ".ds-ports{list-style:none;margin:0;padding:0 24px;background:var(--plate,#e4e4df);color:var(--text,#131313);font-family:Barlow,'Segoe UI',Helvetica,Arial,sans-serif;box-shadow:inset 0 1px 0 var(--plate-hi,#f6f6f2),inset 0 -1px 0 var(--plate-lo,#a9a9a3)}.ds-ports li+li{border-top:1px solid var(--plate-lo,#a9a9a3)}.ds-port{--cable:var(--c-orange,#f26b1d);display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;column-gap:16px;min-height:48px;padding:8px 0;text-decoration:none;color:inherit}.ds-port.ds-blue{--cable:var(--c-blue,#1e63d0)}.ds-num{font-family:'Sometype Mono',ui-monospace,Menlo,monospace;font-size:.8125rem;font-weight:500;font-variant-numeric:tabular-nums;width:2ch}.ds-jack{position:relative;display:inline-block;width:26px;height:22px;background:var(--jack,#111113);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.35);flex-shrink:0}.ds-jack::before{content:'';position:absolute;left:7px;bottom:3px;width:12px;height:5px;background:var(--jack-slot,#3b3b40);border-radius:1px}.ds-led{position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:var(--led-off,#3a3a3e);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5)}.ds-led.up{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}@keyframes ds-act{0%,100%{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}50%{background:var(--led-amber,#ffb020);box-shadow:0 0 4px var(--led-amber,#ffb020)}}.ds-cable{position:relative;display:flex;align-items:center;gap:12px;min-height:32px;min-width:0;padding-left:38px;margin-left:-16px}.ds-cable::before{content:'';position:absolute;left:0;right:0;top:50%;height:6px;margin-top:-3px;background:var(--cable);border-radius:3px;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.25)}.ds-cable::after{content:'';position:absolute;left:0;top:50%;width:14px;height:10px;margin-top:-5px;background:var(--cable);border-radius:2px;filter:brightness(.78)}.ds-lbl{position:relative;z-index:1;font-size:1rem}.ds-spacer{flex:1;min-width:32px}.ds-flag{position:absolute;right:44px;top:50%;transform:translateY(calc(-50% + 4px));font-family:'Sometype Mono',ui-monospace,Menlo,monospace;font-size:.75rem;font-weight:500;text-transform:none;letter-spacing:0;padding:4px 8px;opacity:0;pointer-events:none;z-index:2;transition:opacity .16s ease-out,transform .22s cubic-bezier(.16,1,.3,1)}.ds-port:hover .ds-lbl,.ds-port:focus-visible .ds-lbl{background:var(--ink,#131313);color:var(--tape,#fbfbf8)}.ds-port:hover .ds-flag,.ds-port:focus-visible .ds-flag{opacity:1;transform:translateY(-50%)}.ds-port:hover .ds-led,.ds-port:focus-visible .ds-led{animation:ds-act .5s steps(2,end) infinite}.ds-port:focus-visible{outline:2px solid var(--c-orange,#f26b1d);outline-offset:3px}.ds-plug{position:relative;z-index:1;flex-shrink:0;width:34px;height:16px;margin-left:-4px;background:linear-gradient(180deg,#f3f4f2,#cfd2cf);border:1px solid #8e918e;border-radius:1px 3px 3px 1px;box-shadow:0 1px 1px rgba(0,0,0,.25)}.ds-plug::before{content:'';position:absolute;right:1px;top:2px;bottom:2px;width:7px;background:repeating-linear-gradient(180deg,#d9a441 0 1px,transparent 1px 1.5px);opacity:.95}.ds-plug::after{content:'';position:absolute;left:6px;top:-6px;width:16px;height:7px;background:linear-gradient(180deg,#f3f4f2,#d5d8d5);border:1px solid #8e918e;border-bottom:0;border-radius:2px 6px 0 0;transform:skewX(-18deg)}.ds-plug i{position:absolute;left:-13px;top:2px;width:13px;height:10px;background:var(--cable);filter:brightness(.78);border-radius:2px 0 0 2px}"
+    },
+    {
+      "name": "Nav Port",
+      "kind": "nav",
+      "refersTo": "nav-port",
+      "description": "Top-strip navigation: a small jack with a link LED and a label tape. Current page keeps its LED lit.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-port\" href=\"#\" aria-current=\"page\"><span class=\"ds-jack ds-jack-sm\"><span class=\"ds-led\"></span></span><span class=\"ds-tape\">Projects</span></a><a class=\"ds-nav-port\" href=\"#\"><span class=\"ds-jack ds-jack-sm\"><span class=\"ds-led\"></span></span><span class=\"ds-tape\">Blog</span></a></nav>",
+      "css": ".ds-nav{display:flex;gap:12px;padding:0 24px;height:48px;align-items:center;background:var(--plate,#e4e4df);box-shadow:inset 0 1px 0 var(--plate-hi,#f6f6f2),inset 0 -1px 0 var(--plate-lo,#a9a9a3)}.ds-nav-port{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:inherit;padding:8px 0}.ds-tape{display:inline-block;background:var(--tape,#fbfbf8);color:var(--ink,#131313);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1.1;font-size:.875rem;padding:.28em .6em .24em;clip-path:polygon(0 0,100% .06em,calc(100% - .1em) 100%,.08em 100%);filter:drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14));white-space:nowrap}.ds-nav-port .ds-tape{font-size:.8125rem}.ds-jack{position:relative;display:inline-block;width:26px;height:22px;background:var(--jack,#111113);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.35);flex-shrink:0}.ds-jack::before{content:'';position:absolute;left:7px;bottom:3px;width:12px;height:5px;background:var(--jack-slot,#3b3b40);border-radius:1px}.ds-led{position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:var(--led-off,#3a3a3e);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5)}.ds-led.up{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}@keyframes ds-act{0%,100%{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}50%{background:var(--led-amber,#ffb020);box-shadow:0 0 4px var(--led-amber,#ffb020)}}.ds-jack-sm{width:20px;height:16px}.ds-jack-sm::before{left:5px;bottom:2px;width:10px;height:4px}.ds-jack-sm .ds-led{top:2px;right:2px;width:4px;height:4px}.ds-nav-port:hover .ds-tape{background:var(--ink,#131313);color:var(--tape,#fbfbf8)}.ds-nav-port[aria-current=page] .ds-led,.ds-nav-port:hover .ds-led{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}.ds-nav-port:focus-visible{outline:2px solid var(--c-orange,#f26b1d);outline-offset:3px}"
+    },
+    {
+      "name": "Lights Rocker",
+      "kind": "button",
+      "refersTo": "rocker",
+      "description": "The only button: a two-paddle rocker that switches cabinets. The pressed paddle sinks; aria-pressed mirrors the black cabinet.",
+      "html": "<button class=\"ds-rocker\" type=\"button\" aria-pressed=\"false\" aria-label=\"Switch to the black cabinet\"><span class=\"ds-sw\"></span><span class=\"ds-tape\">Lights</span></button>",
+      "css": ".ds-rocker{appearance:none;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 0;background:none;color:inherit;font:inherit}.ds-sw{position:relative;width:40px;height:20px;background:var(--jack,#111113);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.35);flex-shrink:0}.ds-sw::before,.ds-sw::after{content:'';position:absolute;top:3px;bottom:3px;width:15px;border-radius:1px;background:linear-gradient(180deg,#4a4a50,#2c2c31);box-shadow:inset 0 1px 0 rgba(255,255,255,.12);transition:background .15s,transform .15s}.ds-sw::before{left:4px;background:linear-gradient(180deg,#2c2c31,#1c1c20);transform:scaleY(.85)}.ds-sw::after{right:4px}.ds-rocker[aria-pressed=true] .ds-sw::before{background:linear-gradient(180deg,#4a4a50,#2c2c31);transform:none}.ds-rocker[aria-pressed=true] .ds-sw::after{background:linear-gradient(180deg,#2c2c31,#1c1c20);transform:scaleY(.85)}.ds-tape{display:inline-block;background:var(--tape,#fbfbf8);color:var(--ink,#131313);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1.1;font-size:.875rem;padding:.28em .6em .24em;clip-path:polygon(0 0,100% .06em,calc(100% - .1em) 100%,.08em 100%);filter:drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14));white-space:nowrap}.ds-rocker .ds-tape{font-size:.75rem}.ds-rocker:hover .ds-tape{background:var(--ink,#131313);color:var(--tape,#fbfbf8)}.ds-rocker:focus-visible{outline:2px solid var(--c-orange,#f26b1d);outline-offset:3px}"
+    },
+    {
+      "name": "Drive Sled",
+      "kind": "card",
+      "refersTo": "sled",
+      "description": "Hot-swap sled on a server bezel: aluminium handle with latch, link and ident LEDs, bay number, a plain tape naming where the project lives. The whole sled is a link.",
+      "html": "<div class=\"ds-bays\"><a class=\"ds-sled\" href=\"#\"><span class=\"ds-handle\"></span><span class=\"ds-leds\"><span class=\"ds-sled-led up\"></span><span class=\"ds-sled-led status\"></span></span><span class=\"ds-sled-tape ds-url\">musicdash.guba.dev</span></a><a class=\"ds-sled\" href=\"#\"><span class=\"ds-handle\"></span><span class=\"ds-leds\"><span class=\"ds-sled-led up\"></span><span class=\"ds-sled-led status\"></span></span><span class=\"ds-sled-tape\">GitHub</span></a></div>",
+      "css": ".ds-bays{display:flex;flex-wrap:wrap;gap:10px;padding:16px;background:var(--bezel,#1f1f23);background-image:radial-gradient(circle,rgba(0,0,0,.5) 1px,transparent 1.3px);background-size:6px 6px;counter-reset:bay}.ds-sled{position:relative;display:flex;flex-direction:column;justify-content:flex-end;width:240px;height:120px;padding:0 10px 10px;text-decoration:none;color:var(--ink,#131313);background:var(--sled,#2b2b30);background-image:radial-gradient(circle,rgba(0,0,0,.55) .9px,transparent 1.2px);background-size:4px 4px;border-radius:2px;box-shadow:inset 0 1px 0 var(--sled-hi,#3d3d44),inset 0 -1px 0 #000,inset 1px 0 0 rgba(255,255,255,.05);counter-increment:bay}.ds-sled::after{content:counter(bay);position:absolute;right:10px;bottom:9px;font-family:'Sometype Mono',ui-monospace,Menlo,monospace;font-size:.8125rem;font-weight:500;color:#8a8a90}.ds-handle{position:absolute;left:10px;right:34px;top:10px;height:26px;background:linear-gradient(180deg,var(--handle,#c9c9c4),var(--handle-lo,#8f8f8a));border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(0,0,0,.35),0 1px 2px rgba(0,0,0,.6)}.ds-handle::before{content:'';position:absolute;left:6px;top:5px;width:28px;height:16px;background:linear-gradient(180deg,#ececec,#bdbdbd);border-radius:1px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)}.ds-leds{position:absolute;right:11px;top:12px;display:flex;flex-direction:column;gap:7px}.ds-sled-led{width:9px;height:9px;border-radius:50%;background:var(--led-off,#3a3a3e);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5)}.ds-sled-led.up{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}.ds-sled-led.status{background:#2f78d8;box-shadow:0 0 4px #2f78d8}.ds-sled-tape{align-self:flex-start;max-width:calc(100% - 14px);display:inline-flex;align-items:center;gap:8px;background:var(--tape,#fbfbf8);color:var(--ink,#131313);font-family:Barlow,'Segoe UI',Helvetica,Arial,sans-serif;font-size:.9375rem;font-weight:500;line-height:1.1;padding:5px 10px 5px 9px;clip-path:polygon(0 0,100% .06em,calc(100% - .1em) 100%,.08em 100%);filter:drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14));overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-sled-tape.ds-url{font-family:'Sometype Mono',ui-monospace,Menlo,monospace;font-size:.8125rem}.ds-sled:hover .ds-sled-tape,.ds-sled:focus-visible .ds-sled-tape{background:var(--c-yellow,#f2b807)}.ds-sled:hover .ds-sled-led.up{animation:ds-act .5s steps(2,end) infinite}.ds-sled:focus-visible{outline:2px solid var(--c-orange,#f26b1d);outline-offset:3px}@keyframes ds-act{0%,100%{background:var(--led-green,#35e06b);box-shadow:0 0 5px var(--led-green,#35e06b)}50%{background:var(--led-amber,#ffb020);box-shadow:0 0 4px var(--led-amber,#ffb020)}}"
+    },
+    {
+      "name": "Faceplate Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "A 1U brushed-aluminium panel with mounting screws in its ears and a heading tape at top-left. Every section is one of these, stacked with a vent between.",
+      "html": "<section class=\"ds-panel\"><h2 class=\"ds-panel-h\"><span class=\"ds-tape\">Go on then</span></h2></section><div class=\"ds-vent\"></div><section class=\"ds-panel ds-panel-footer\"><div class=\"ds-row\"><span>&copy; 2026 guba.dev</span><span>Groningen</span></div></section>",
+      "css": ".ds-panel{position:relative;background:var(--plate,#e4e4df);background-image:repeating-linear-gradient(90deg,var(--brush,rgba(0,0,0,.065)) 0 1px,transparent 1px 3px);box-shadow:inset 0 1px 0 var(--plate-hi,#f6f6f2),inset 0 -1px 0 var(--plate-lo,#a9a9a3);padding:0 40px;min-height:48px;color:var(--text,#131313);font-family:Barlow,'Segoe UI',Helvetica,Arial,sans-serif}.ds-panel::before,.ds-panel::after{content:'';position:absolute;top:50%;width:11px;height:11px;margin-top:-5px;border-radius:50%;background:linear-gradient(90deg,transparent 0 4px,var(--hole,#0a0a0b) 4px 7px,transparent 7px) no-repeat center/11px 1px,radial-gradient(circle at 40% 35%,#f4f4f0,#a9a9a3 70%,#7a7a75);box-shadow:0 1px 1px rgba(0,0,0,.35)}.ds-panel::before{left:12px}.ds-panel::after{right:12px}.ds-panel-h{font-size:.875rem;height:48px;display:flex;align-items:center;margin:0}.ds-tape{display:inline-block;background:var(--tape,#fbfbf8);color:var(--ink,#131313);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1.1;font-size:.875rem;padding:.28em .6em .24em;clip-path:polygon(0 0,100% .06em,calc(100% - .1em) 100%,.08em 100%);filter:drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14));white-space:nowrap}.ds-vent{height:48px;background:var(--rack,#c9c9c3);background-image:radial-gradient(circle,var(--vent,rgba(0,0,0,.13)) 1.6px,transparent 1.9px);background-size:10px 10px;background-position:0 4px}.ds-panel-footer{background:var(--rail,#1c1c1e);background-image:none;color:var(--rail-ink,#f2f2ee);box-shadow:inset 0 1px 0 var(--rail-edge,#1c1c1e),inset 0 -1px 0 #000}.ds-panel-footer::before,.ds-panel-footer::after{background:linear-gradient(90deg,transparent 0 4px,#000 4px 7px,transparent 7px) no-repeat center/11px 1px,radial-gradient(circle at 40% 35%,#8a8a86,#4a4a48 70%,#2a2a29)}.ds-row{display:flex;justify-content:space-between;align-items:center;min-height:48px;font-size:.875rem;font-weight:500}"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "The blog post: a printed sheet taped to the plate at its top corners, condensed upper-case title, mono date, Barlow prose with blue-underlined links.",
+      "html": "<div class=\"ds-desk\"><article class=\"ds-sheet\"><h1>Hello World</h1><p class=\"ds-date\">6 April 2026</p><div class=\"ds-post\"><p>First post. Somewhere to put <a href=\"#\">write-ups</a> and things learned, like <code>kubectl get pods</code> at 3am.</p></div></article></div>",
+      "css": ".ds-desk{padding:32px 40px;background:var(--plate,#e4e4df)}.ds-sheet{position:relative;max-width:72ch;background:var(--tape,#fbfbf8);color:var(--ink,#131313);box-shadow:0 1px 1px rgba(0,0,0,.22),0 3px 8px rgba(0,0,0,.14);border-radius:1.5px;padding:clamp(24px,4vw,48px);font-family:Barlow,'Segoe UI',Helvetica,Arial,sans-serif}.ds-sheet::before,.ds-sheet::after{content:'';position:absolute;top:-10px;width:64px;height:20px;background:rgba(255,255,255,.55);border:1px solid rgba(0,0,0,.08);box-shadow:0 1px 2px rgba(0,0,0,.12)}.ds-sheet::before{left:24px;transform:rotate(-4deg)}.ds-sheet::after{right:24px;transform:rotate(3deg)}.ds-sheet h1{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(2rem,5vw,3rem);line-height:.98;margin:0 0 12px;text-wrap:balance}.ds-date{font-family:'Sometype Mono',ui-monospace,Menlo,monospace;font-size:.8125rem;font-weight:500;margin:0 0 36px;padding-bottom:14px;border-bottom:1px solid var(--plate-lo,#a9a9a3)}.ds-post{font-size:1.0625rem;line-height:1.6}.ds-post p{margin:0 0 16px}.ds-post a{color:inherit;text-decoration:underline;text-decoration-color:var(--c-blue,#1e63d0);text-decoration-thickness:2px;text-underline-offset:3px}.ds-post a:hover{color:var(--c-blue,#1e63d0)}.ds-post code{font-family:'Sometype Mono',ui-monospace,Menlo,monospace;font-size:.875em;background:var(--tape-2,#ececea);padding:2px 5px;border-radius:1.5px}"
+    },
+    {
+      "name": "Legend",
+      "kind": "custom",
+      "refersTo": "tape",
+      "description": "The printed cable colour code: a swatch, the colour name in condensed caps, and its meaning.",
+      "html": "<div class=\"ds-legend\"><span class=\"ds-tape\">Cable colour code</span><dl><dt><span class=\"ds-sw\" style=\"background:var(--c-blue,#1e63d0)\"></span>blue</dt><dd>personal</dd><dt><span class=\"ds-sw\" style=\"background:var(--c-yellow,#f2b807)\"></span>yellow</dt><dd>university</dd><dt><span class=\"ds-sw\" style=\"background:var(--c-green,#22a35a)\"></span>green</dt><dd>writing</dd><dt><span class=\"ds-sw\" style=\"background:var(--c-orange,#f26b1d)\"></span>orange</dt><dd>off-site</dd></dl></div>",
+      "css": ".ds-legend{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;min-height:48px;padding:8px 24px;background:var(--plate,#e4e4df);color:var(--text,#131313);font-family:Barlow,'Segoe UI',Helvetica,Arial,sans-serif;box-shadow:inset 0 1px 0 var(--plate-hi,#f6f6f2),inset 0 -1px 0 var(--plate-lo,#a9a9a3)}.ds-tape{display:inline-block;background:var(--tape,#fbfbf8);color:var(--ink,#131313);font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1.1;font-size:.875rem;padding:.28em .6em .24em;clip-path:polygon(0 0,100% .06em,calc(100% - .1em) 100%,.08em 100%);filter:drop-shadow(0 1px 1px rgba(0,0,0,.22)) drop-shadow(0 3px 6px rgba(0,0,0,.14));white-space:nowrap}.ds-legend .ds-tape{font-size:.75rem}.ds-legend dl{display:contents;margin:0}.ds-legend dt,.ds-legend dd{display:inline-flex;align-items:center;gap:8px;font-size:.8125rem;font-weight:500;margin:0}.ds-legend dt{text-transform:uppercase;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:600;letter-spacing:.02em}.ds-legend .ds-sw{width:22px;height:6px;border-radius:3px;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Patch Panel Labels",
+    "overview": "The site is the rack Patrick works in. Two dark steel rails frame every page with a rack-unit ruler and square mounting holes; everything between them is equipment bolted in whole rack units (1U = 48px). Content sits on brushed-aluminium faceplates, headings are thermal print on white label tape with scissor-cut ends, and every link is an RJ45 port with a link LED and a jacket-coloured cable that leaves toward the right rail. The cable colour code has fixed meaning and is printed as a legend on the home page: blue is personal, yellow is university, green is writing, orange is off-site.\n\nDensity is that of a well-labelled cabinet: flat, physical, and busy with small hardware (screws, LEDs, vents, boots, latches) while the text itself stays sparse and large. Depth is mechanical, never atmospheric: a tape sits a millimetre proud of its plate, a bezel is recessed behind its ears, a cable has a highlight on top and a shade underneath. Two cabinets exist, white (default in light) and black (default under a dark OS scheme); the plate, rails, vents and bezels change, the tape stays white in both, because printed label tape is white in every cabinet. The build refuses the dark-mode developer portfolio: no hero, no muted intro paragraph, no chip row, no hairline card list.\n\nMotion is one authored moment plus one response. On load the port LEDs run a link-up sequence (off, amber, green, staggered 80ms, once). Hover or focus on a port blinks its activity LED and reveals a cable flag naming the far end. Reduced motion shows green LEDs static and no flag transition.",
+    "keyCharacteristics": [
+      "Whole-rack-unit vertical rhythm (48px), enforced by CSS heights and padded to the boundary by `rack.js`.",
+      "Text is print on tape or print on the bezel; nothing is set directly on the faceplate except port tails, descriptions and the legend.",
+      "Four cable colours with fixed semantic meaning, never decorative.",
+      "Hardware is drawn in CSS from gradients and pseudo-elements; no raster imagery, no icon fonts. Inline SVG only for brand marks on cable labels.",
+      "Every page renders without JavaScript; the rocker and the U-snap are progressive enhancement."
+    ],
+    "rules": [
+      {
+        "name": "The Legend Rule",
+        "body": "Cable colours mean what the legend says (blue personal, yellow university, green writing, orange off-site) and nothing else. A new link picks its colour by where it goes, never by taste.",
+        "section": "colors"
+      },
+      {
+        "name": "The White Tape Rule",
+        "body": "Tape and ink do not change between cabinets. Only metal changes: rack, plate, rails, holes, jacks, bezels, sleds, straps.",
+        "section": "colors"
+      },
+      {
+        "name": "The Coloured Ink Rule",
+        "body": "Coloured tape carries white print, except yellow, which carries black ink. Hovered tape inverts to black tape with white print.",
+        "section": "colors"
+      },
+      {
+        "name": "The Print Rule",
+        "body": "Barlow Condensed appears only upper-case and only on tape, bezel headings, or legend terms; it never sets a sentence. Sometype Mono appears only where a machine would print: numbers, dates, addresses, code.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Tape Rule",
+        "body": "Any tape longer than a label (the honest line, a project tagline) switches to `tape.plain`: Barlow 500, sentence case, wrapping allowed.",
+        "section": "typography"
+      },
+      {
+        "name": "The Edge-Light Rule",
+        "body": "A surface shows its thickness with one highlight pixel on top and one shade pixel below. No surface floats on a blurred shadow except tape, the sheet, and the plug, which are objects lying on a surface.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Glow Is An LED Rule",
+        "body": "Luminous colour appears only as an LED's glow. No glowing text, no glowing borders, no accent halos.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep every section a whole number of rack units (multiples of 48px) and separate panels with a 1U vent; let `rack.js` snap what CSS cannot.",
+      "Do put every heading on tape and every link on a port with a cable whose colour follows the legend.",
+      "Do draw new hardware in CSS with the edge-light pair (1px highlight top, 1px shade bottom) and the existing jack, LED, cable and screw primitives.",
+      "Do keep tape white and ink black in both cabinets; theme only metal (`rack`, `plate`, `rail`, `hole`, `jack`, `bezel`, `sled`, `strap`).",
+      "Do use Barlow Condensed 700 upper-case for label print, Barlow 400/500 for sentences, Sometype Mono 500 for numbers, dates, addresses and code.",
+      "Do use the orange focus ring (2px solid, 3px offset) on anything focusable and keep nav targets at 44px.",
+      "Do give any new LED the link-up sequence with a `--i` stagger, and honour `prefers-reduced-motion` by rendering the lit state static."
+    ],
+    "donts": [
+      "Don't assign a cable colour for contrast or decoration; blue, yellow, green and orange each mean one thing.",
+      "Don't set text directly on the faceplate where tape or bezel print would carry it; the faceplate carries only tails, descriptions and the legend.",
+      "Don't add a radius above 3px, a blurred ambient shadow, a glow that is not an LED, or a gradient that is not a machined part (screw, handle, plug, power button).",
+      "Don't use hard offset shadows; tape and the sheet lift with a soft two-layer drop shadow.",
+      "Don't introduce icon fonts, raster hardware imagery, or SVG beyond brand marks on cable labels; hardware is CSS.",
+      "Don't use Barlow Condensed in sentence case or for body copy, and don't set Sometype Mono for prose.",
+      "Don't load third-party fonts or scripts; everything is served from the site root."
+    ]
+  }
+}
