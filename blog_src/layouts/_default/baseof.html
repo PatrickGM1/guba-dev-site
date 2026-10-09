@@ -5,10 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &rarr; {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .Summary }}{{ .Summary | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:site_name" content="guba.dev" />
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+  <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .Summary }}{{ .Summary | plainify | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="https://guba.dev/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script>try{var c=localStorage.getItem('cabinet');if(c)document.documentElement.setAttribute('data-theme',c)}catch(e){}</script>
   <link rel="stylesheet" href="/style.css?v=20260917" />
   <script src="/rack.js?v=20260917" defer></script>
+  <script data-goatcounter="https://guba.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
@@ -37,6 +49,7 @@
       <footer class="panel">
         <div class="row">
           <span>&copy; {{ now.Year }} <a href="https://guba.dev">guba.dev</a></span>
+          <span><a href="https://guba.dev/privacy">Privacy</a> &middot; <a href="https://guba.dev/terms">Terms</a></span>
           <span>Groningen</span>
         </div>
       </footer>
